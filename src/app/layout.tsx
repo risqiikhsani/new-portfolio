@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import "yet-another-react-lightbox/styles.css";
 import "./globals.css";
 import { Inter as FontSans } from "next/font/google";
 
@@ -37,7 +37,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar/>
-          <div className="container flex flex-col min-h-screen gap-4 py-28">
+          <div className="container min-h-screen py-28">
           {children}
           </div>
           <Footer/>
