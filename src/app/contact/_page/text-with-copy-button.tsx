@@ -19,12 +19,12 @@ export default function TextWithCopyButton({ text }: { text: string }) {
 
     return (
         <>
-            <div className="flex items-center gap-4 border-2 border-cyan-300 p-4 rounded-xl">
-                <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-200"> {text}</h2>
+            <div className="flex items-center gap-4 border-2 border-cyan-300 md:p-4 p-2 rounded-xl">
+                <h2 className="md:text-2xl font-bold text-gray-800 dark:text-gray-200"> {text}</h2>
                 <TooltipProvider>
                     <Tooltip>
                         <TooltipTrigger asChild>
-                            <Button variant="outline" onClick={onCopy}>
+                            <Button variant="outline" onClick={onCopy} >
                                 <BsCopy className="w-4 h-4" />
                             </Button>
                         </TooltipTrigger>

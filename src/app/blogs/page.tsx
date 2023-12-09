@@ -22,7 +22,7 @@ const Page = async () => {
         <>
             <Title title="Blogs" text="Here is some blogs that I find interesting." />
             <Separator className="my-4" />
-            <div className="gap-10 grid grid-cols-2">
+            <div className="gap-10 grid md:grid-cols-2">
                 {posts.map((a, i) => (
                     <Card key={i} className="hover:border-4 hover:border-cyan-300">
                         <CardHeader>
