@@ -6,7 +6,7 @@ const Page = async () => {
         <>
             <div className="flex flex-col gap-10 justify-center items-center">
                 <Title title="Contact" text="Wanna have a chat ? please email me !" />
-                <Image src="/contact/email.gif" height="500" width="500" alt="email" />
+                <Image src="/contact_files/email.gif" height="500" width="500" alt="email" />
             </div>
         </>
     )
