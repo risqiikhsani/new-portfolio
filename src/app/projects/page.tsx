@@ -14,6 +14,7 @@ import { Separator } from "@/components/ui/separator"
 import { projects } from "@/constant/projects"
 import Image from "next/image"
 import Link from "next/link"
+import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
 
 const Page = async () => {
     return (
@@ -41,7 +42,9 @@ const Page = async () => {
                         </CardContent>
                         <CardFooter className="flex justify-end">
                             {!a.on_progress && <Button asChild>
-                                <Link href={a.url}>visit</Link>
+                                <Link href={a.url} className="flex items-center">visit
+                                    <ArrowSmallRightIcon className="w-4 h-4 ml-2" />
+                                </Link>
                             </Button>}
 
                         </CardFooter>
