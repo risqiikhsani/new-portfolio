@@ -8,7 +8,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Toaster } from 'sonner'
-import Visitor from "@/components/visitor";
+import Visitor from "@/components/Visitor";
+
+
 
 export const metadata: Metadata = {
   title: "Hypernova Portfolio",
@@ -44,6 +46,7 @@ export default function RootLayout({
           <div className="container min-h-screen py-28">
           {children}
           </div>
+
           <Visitor/>
           <Footer/>
         </ThemeProvider>
