@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Toaster } from 'sonner'
-import NumberVisitor from "@/components/Visitor";
+import NumberVisitor from "@/components/number-visitor";
 
 
 
