@@ -1,7 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 
-export default function Visitor() {
+export default function NumberVisitor() {
   const [viewerCount, setViewerCount] = useState(0);
 
   useEffect(() => {

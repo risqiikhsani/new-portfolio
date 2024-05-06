@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Toaster } from 'sonner'
-import Visitor from "@/components/Visitor";
+import NumberVisitor from "@/components/Visitor";
 
 
 
@@ -46,8 +46,7 @@ export default function RootLayout({
           <div className="container py-28 md:px-52 bg-[url('/home_files/subtle-prism.svg')] dark:bg-[url('/home_files/background.png')]">
           {children}
           </div>
-
-          <Visitor/>
+          <NumberVisitor/>
           <Footer/>
         </ThemeProvider>
       </body>
