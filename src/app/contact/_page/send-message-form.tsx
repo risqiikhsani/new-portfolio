@@ -73,7 +73,7 @@ export default function SendMessageForm() {
 
 
     return (
-        <div className="bg-emerald-400 p-10">
+        <div className="bg-emerald-400 p-10 md:w-full">
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                 <FormField
@@ -102,14 +102,14 @@ export default function SendMessageForm() {
                                 <Textarea {...field} />
                             </FormControl>
                             <FormDescription>
-                                Send me message.
+                                Provide your message.
                             </FormDescription>
                             <FormMessage />
                         </FormItem>
                     )}
                 />
                 <p>{form.formState.isSubmitting && "Loading..."}</p>
-                <Button type="submit">Submit</Button>
+                <Button type="submit">Send message</Button>
             </form>
         </Form>
         </div>
