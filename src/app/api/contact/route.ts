@@ -1,5 +1,6 @@
 import nodemailer from 'nodemailer';
-
+import { render } from '@react-email/render';
+import EmailLayout from '@/components/email';
 
 export async function POST(request: Request) {
     // const formData = await request.formData()
@@ -17,12 +18,14 @@ export async function POST(request: Request) {
         },
     });
 
+    const emailHtml = render(EmailLayout({sender:email,message:message}));
+
     // Set up email data
     const mailOptions = {
         from: 'risqiikhsani12@gmail.com',
         to: "risqiikhsani16@gmail.com",
         subject: "Message from portfolio",
-        text: message,
+        html: emailHtml
     };
 
     try {

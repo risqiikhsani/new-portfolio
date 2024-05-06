@@ -43,7 +43,7 @@ export default function RootLayout({
         >
           <Toaster position="bottom-left" richColors/>
           <Navbar/>
-          <div className="container min-h-screen py-28">
+          <div className="container py-28 md:px-52 bg-[url('/home_files/subtle-prism.svg')] dark:bg-[url('/home_files/background.png')]">
           {children}
           </div>
 
