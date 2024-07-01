@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { backend, data_science, dev_ops, languages, frontend, machine_learning, game_dev, cloud } from "@/constant/expertise";
+import { backend, data_science, dev_ops, languages, frontend, machine_learning, game_dev, cloud, os } from "@/constant/expertise";
 import { introduction } from "@/constant/introduction";
 import { ExpertiseType } from "@/types";
 import { FaGithub } from "react-icons/fa";
@@ -49,8 +49,9 @@ const sections = [
   { title: 'Cloud', data: cloud },
   { title: 'Game dev', data: game_dev },
   { title: 'Dev ops', data: dev_ops },
-  { title: 'Data science', data: data_science },
+  { title: 'Data Analyst / Science', data: data_science },
   { title: 'Machine learning', data: machine_learning },
+  { title: 'Operating System', data: os },
   // Add more sections as needed
 ];
 

@@ -52,6 +52,14 @@ export const frontend = [
 
 export const backend = [
     {
+        name:"Serverless architecture",
+        currently_use:true
+    },
+    {
+        name:"AWS Lambda",
+        currently_use:true
+    },
+    {
         name:"Django",
         currently_use:true
     },
@@ -99,6 +107,14 @@ export const backend = [
         name:"NoSQL",
         currently_use:true
     },
+    {
+        name:"Docker",
+        currently_use:true
+    },
+    {
+        name:"Kubernetes",
+        currently_use:false
+    },
 
 ]
 
@@ -106,6 +122,10 @@ export const cloud = [
     {
         name:"Amazon Web Services (AWS)",
         currently_use:true
+    },
+    {
+        name:"Google Cloud (GCP)",
+        currently_use:false
     },
 ]
 
@@ -126,6 +146,14 @@ export const dev_ops = [
         currently_use:true
     },
     {
+        name:"Github CI/CD",
+        currently_use:false
+    },
+    {
+        name:"GitLab CI/CD",
+        currently_use:false
+    },
+    {
         name:"learning...",
         currently_use:false
     },
@@ -134,6 +162,26 @@ export const dev_ops = [
 
 export const data_science = [
     {
+        name:"Py Numpy",
+        currently_use:false
+    },
+    {
+        name:"Py Pandas",
+        currently_use:false
+    },
+    {
+        name:"Py SciPy",
+        currently_use:false
+    },
+    {
+        name:"Matplotlib",
+        currently_use:false
+    },
+    {
+        name:"Data in AWS",
+        currently_use:false
+    },
+    {
         name:"learning...",
         currently_use:false
     },
@@ -141,8 +189,32 @@ export const data_science = [
 
 export const machine_learning = [
     {
+        name:"Generative AI",
+        currently_use:false
+    },
+    {
+        name:"ML in AWS",
+        currently_use:false
+    },
+    {
         name:"learning...",
         currently_use:false
     },
 ]
+
+export const os = [
+    {
+        name:"Linux Ubuntu",
+        currently_use:true
+    },
+    {
+        name:"Windows OS",
+        currently_use:true
+    },
+    {
+        name:"Mac OS",
+        currently_use:false
+    },
+]
+
 
