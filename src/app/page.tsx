@@ -8,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { backend, data_science, dev_ops, languages, frontend, machine_learning, game_dev } from "@/constant/expertise";
+import { backend, data_science, dev_ops, languages, frontend, machine_learning, game_dev, cloud } from "@/constant/expertise";
 import { introduction } from "@/constant/introduction";
 import { ExpertiseType } from "@/types";
 import { FaGithub } from "react-icons/fa";
@@ -46,6 +46,7 @@ const sections = [
   { title: 'Languages', data: languages },
   { title: 'Back end', data: backend },
   { title: 'Front end', data: frontend },
+  { title: 'Cloud', data: cloud },
   { title: 'Game dev', data: game_dev },
   { title: 'Dev ops', data: dev_ops },
   { title: 'Data science', data: data_science },
@@ -76,7 +77,7 @@ export default function Page() {
       <div className="flex flex-col gap-4 justify-center items-center">
         <CustomTypeAnimation />
         <Avatar className="w-40 h-40 md:w-80 md:h-80 border-cyan-400 border-8">
-          <AvatarImage src="/home_files/cutecat2.jpg" />
+          <AvatarImage src="/home_files/profile.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <CardTitle className="text-center italic">Risqi Ikhsani</CardTitle>
@@ -99,6 +100,7 @@ export default function Page() {
           <CardDescription className="text-center">Some technologies I've worked with</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col gap-2">
+          <p>note : names marked with colored badge are mostly or currently use</p>
           {sections.map(({ title, data }) => renderSection(title, data))}
         </CardContent>
       </Card>

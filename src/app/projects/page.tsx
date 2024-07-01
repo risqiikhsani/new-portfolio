@@ -27,7 +27,7 @@ const Page = async () => {
                     <Card key={i} className="hover:border-4 hover:border-cyan-300">
                         <CardHeader>
                             <CardTitle>{a.name}</CardTitle>
-                            <CardDescription>type : {a.type}</CardDescription>
+                            <CardDescription>about : {a.type}</CardDescription>
                             {a.on_progress && <Alert className="bg-red-400 dark:bg-red-900">
                                 <IoRocketSharp className="h-4 w-4" />
                                 <AlertTitle>On progress </AlertTitle>

@@ -43,10 +43,12 @@ export default function RootLayout({
         >
           <Toaster position="bottom-left" richColors/>
           <Navbar/>
-          <div className="container py-28 md:px-52 bg-[url('/home_files/subtle-prism.svg')] dark:bg-[url('/home_files/background.png')]">
-          {children}
+          <div className=" bg-[url('/home_files/subtle-prism.svg')] dark:bg-[url('/home_files/background.png')]">
+            <div className="container py-28 md:px-52">
+            {children}
+            </div>
           </div>
-          <NumberVisitor/>
+          {/* <NumberVisitor/> */}
           <Footer/>
         </ThemeProvider>
       </body>

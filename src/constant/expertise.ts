@@ -6,6 +6,10 @@ export const languages = [
         currently_use:true
     },
     {
+        name:"Typescript",
+        currently_use:true
+    },
+    {
         name:"Java",
         currently_use:false
     },
@@ -29,7 +33,7 @@ export const frontend = [
         currently_use:true
     },
     {
-        name:"Tailwind",
+        name:"Tailwind UI",
         currently_use:true
     },
     {
@@ -57,15 +61,15 @@ export const backend = [
     },
     {
         name:"Microservices",
-        currently_use:false
+        currently_use:true
     },
     {
         name:"Golang backend",
         currently_use:true
     },
     {
-        name:"REST",
-        currently_use:false
+        name:"REST API",
+        currently_use:true
     },
     {
         name:"Websocket",
@@ -85,7 +89,7 @@ export const backend = [
     },
     {
         name:"git",
-        currently_use:false
+        currently_use:true
     },
     {
         name:"SQL",
@@ -93,11 +97,15 @@ export const backend = [
     },
     {
         name:"NoSQL",
-        currently_use:false
+        currently_use:true
     },
+
+]
+
+export const cloud = [
     {
-        name:"AWS",
-        currently_use:false
+        name:"Amazon Web Services (AWS)",
+        currently_use:true
     },
 ]
 
@@ -113,6 +121,10 @@ export const game_dev = [
 ]
 
 export const dev_ops = [
+    {
+        name:"CI/CD",
+        currently_use:true
+    },
     {
         name:"learning...",
         currently_use:false
